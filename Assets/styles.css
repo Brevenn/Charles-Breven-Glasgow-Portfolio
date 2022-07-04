@@ -22,7 +22,7 @@ a {
 /* Header Section */
 #hero {
     columns: row;
-    background-color: black;
+    background-color: rgb(134, 83, 83);
     background-size: cover;
     background-position: top right;
     position: relative;
@@ -70,7 +70,7 @@ a {
     left: 0;
     height: 100%;
     width: 0;
-    background-color: #8a2be2;
+    background-color: #aa72de;
     animation: text_reveal_box 1s ease;
     animation-delay: 3s;
 }
@@ -107,40 +107,85 @@ a {
 #banner {
     color: #f0f8ff;
     margin: 0;
-    padding: 50px;
+    padding: 25px;
     background-image: url(./img/Header-background.png);
     background-size: cover;
     background-position: top right;
     position: relative;
     z-index: 1;
 }
+#banner .banner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0px 50px;
+    justify-content: flex-start;
+}
 /* End Hero Banner Section */
 
 /* About Section */
 #about {
-    background-color: #6495ed;
-    padding: 100px;
+    background-color: #570f6d;
+    padding: 20px;
     position: relative;
 }
-#about .h1 {
-    text-align: center;
+#about h3 {
+    text-align: left;
 }
 /* End About Section */
 
 /* Portfolio Section */
 #portfolio {
     background-color: #6495ed;
-    padding: 100px;
+    padding: 15px;
     columns: row;
     position: relative;
+}
+#portfolio h4 {
+    text-align: center;
+}
+#portfolio .cta {
+    margin: 0;
+    display: table-row;
+    padding:  10px 30px;
+    color: #f0f8ff;
+    background-color: transparent;
+    border: 2px solid #8a2be2;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    margin-top: 36px;
+    transition: .3s ease;
+    transition-property: background-color, color;
+    text-align: left;
+}
+#portfolio .cta:hover {
+    color: #f0f8ff;
+    background-color: #9847e3;
 }
 /* End Portfolio Section */
 
 /* Contact Section */
 #contact{
-    background-color: #6495ed;
+    background-color: #cd64ed;
     padding: 100px;
     position: relative;
+}
+#contact h5 {
+    text-align: center;
+}
+#contact .cta {
+    display: inline-block;
+    padding:  15px 20px;
+    color: #f0f8ff;
+    background-color: transparent;
+    border: 2px solid #8a2be2;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    margin-top: 24px;
+    transition: .3s ease;
+    transition-property: background-color, color;
+    text-align: left;
 }
 /* End Contact Section */
 
