@@ -1,16 +1,16 @@
-*{
+* {
     padding: 0%;
     margin: 0%;
     box-sizing: border-box;
 }
-html{
+html {
     font-size: 14px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-a{
+a {
     text-decoration: none;
 }
-.container{
+.container {
     border-color: rgb(190, 74, 74);
     min-height: 20vh;
     width: 100%;
@@ -20,7 +20,7 @@ a{
 }
 
 /* Header Section */
-#hero{
+#hero {
     columns: row;
     background-color: black;
     background-size: cover;
@@ -28,7 +28,7 @@ a{
     position: relative;
     z-index: 1;
 }
-#hero::after{
+#hero::after {
     content:'';
     position: absolute;
     left: 0%;
@@ -39,13 +39,13 @@ a{
     opacity: .7;
     z-index: -1;
 }
-#hero .hero{
+#hero .hero {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0px 50px;
     justify-content: flex-start;
 }
-#hero h1{
+#hero h1 {
     display: block;
     width: fit-content;
     font-size: 4rem;
@@ -54,17 +54,17 @@ a{
     animation: text_reveal .5s ease forwards;
     animation-delay: 1s;
 }
-#hero h1:nth-child(1){
+#hero h1:nth-child(1) {
     animation-delay: 1s;
 }
-#hero h1:nth-child(2){
+#hero h1:nth-child(2) {
     animation-delay: 2s;
 }
-#hero h1:nth-child(3){
+#hero h1:nth-child(3) {
     animation: text_reveal_name .5s ease forwards;
     animation-delay: 3s;
 }
-#hero h1 span{
+#hero h1 span {
     position: absolute;
     top: 0;
     left: 0;
@@ -74,16 +74,16 @@ a{
     animation: text_reveal_box 1s ease;
     animation-delay: 3s;
 }
-#hero h1:nth-child(1) span{
+#hero h1:nth-child(1) span {
     animation-delay: .5s;
 }
-#hero h1:nth-child(2) span{
+#hero h1:nth-child(2) span {
     animation-delay: 1.5s;
 }
-#hero h1:nth-child(3) span{
+#hero h1:nth-child(3) span {
     animation-delay: 2.5s;
 }
-#hero .cta{
+#hero .cta {
     display: inline-block;
     padding:  10px 30px;
     color: #f0f8ff;
@@ -95,14 +95,16 @@ a{
     margin-top: 36px;
     transition: .3s ease;
     transition-property: background-color, color;
+    text-align: left;
 }
-#hero .cta:hover{
+#hero .cta:hover {
     color: #f0f8ff;
     background-color: #8a2be2;
 }
 /* End Header Section */
+
 /* Hero Banner Section */
-#banner{
+#banner {
     color: #f0f8ff;
     margin: 0;
     padding: 50px;
@@ -113,6 +115,35 @@ a{
     z-index: 1;
 }
 /* End Hero Banner Section */
+
+/* About Section */
+#about {
+    background-color: #6495ed;
+    padding: 100px;
+    position: relative;
+}
+#about .h1 {
+    text-align: center;
+}
+/* End About Section */
+
+/* Portfolio Section */
+#portfolio {
+    background-color: #6495ed;
+    padding: 100px;
+    columns: row;
+    position: relative;
+}
+/* End Portfolio Section */
+
+/* Contact Section */
+#contact{
+    background-color: #6495ed;
+    padding: 100px;
+    position: relative;
+}
+/* End Contact Section */
+
 /* Keyframes Section */
 @keyframes text_reveal_box{
     50%{
