@@ -5,15 +5,16 @@
 }
 html {
     font-size: 14px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 a {
     text-decoration: none;
 }
 .container {
-    border-color: rgb(190, 74, 74);
-    min-height: 20vh;
-    width: 100%;
+    margin-right: 400px;
+    border-color: navy;
+    min-height: 15vh;
+    width: 60%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -21,12 +22,18 @@ a {
 
 /* Header Section */
 #hero {
+    display: flex;
     columns: row;
-    background-color: rgb(134, 83, 83);
+    border: 2px solid navy;
+    background-color: #4a4a4a;
     background-size: cover;
     background-position: top right;
     position: relative;
     z-index: 1;
+    background-image: url(./img/recent-selfie.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
 }
 #hero::after {
     content:'';
@@ -35,18 +42,19 @@ a {
     top: 0%;
     height: 100%;
     width: 100%;
-    background-color: #808080;
+    background-color: #4a4a4a;
     opacity: .7;
     z-index: -1;
 }
 #hero .hero {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0px 50px;
+    padding: 20px 20px;
     justify-content: flex-start;
 }
 #hero h1 {
     display: block;
+    justify-content: left;
     width: fit-content;
     font-size: 4rem;
     position: relative;
@@ -68,9 +76,10 @@ a {
     position: absolute;
     top: 0;
     left: 0;
+    right: 300%;
     height: 100%;
     width: 0;
-    background-color: #aa72de;
+    background-color: aliceblue;
     animation: text_reveal_box 1s ease;
     animation-delay: 3s;
 }
@@ -85,10 +94,11 @@ a {
 }
 #hero .cta {
     display: inline-block;
+    justify-content: right;
     padding:  10px 30px;
-    color: #f0f8ff;
+    color: navy;
     background-color: transparent;
-    border: 2px solid #8a2be2;
+    border: 2px solid navy;
     font-size: 2rem;
     text-transform: uppercase;
     letter-spacing: .1rem;
@@ -98,94 +108,247 @@ a {
     text-align: left;
 }
 #hero .cta:hover {
-    color: #f0f8ff;
-    background-color: #8a2be2;
+    color: navy;
+    background-color: #808080;
 }
 /* End Header Section */
 
 /* Hero Banner Section */
-#banner {
-    color: #f0f8ff;
-    margin: 0;
-    padding: 25px;
-    background-image: url(./img/Header-background.png);
-    background-size: cover;
-    background-position: top right;
+.hero-banner {
+    display: flex;
+    justify-content: center;
+}
+.banner-nav-wrapper {
+    background-color: #4a4a4a;
+}
+.banner-header {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #4a4a4a;
+    font-size: 40px;
     position: relative;
-    z-index: 1;
+    border: 3px solid navy;
+    background-image: url(./img/Header-background.png);
+    text-decoration: underline black;
+}
+.banner-content {
+    display: flex;
+    justify-content: right;
+    text-align: center;
+    font-size: 25px;
+    border: 2px solid navy;
+    color: aliceblue;
+    margin: 20px;
+    padding: 20px;
+}
+#banner {
+    display: flex;
+    flex-direction: row;
+    padding:0px 40px;
+    justify-content: center;
+    box-sizing: border-box;
+    background-color: #4a4a4a;
+    font-size: 40px;
+    position: relative;
+    border: 3px solid navy;
 }
 #banner .banner {
+    display: flex;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0px 50px;
+    padding: 0px 400px;
     justify-content: flex-start;
 }
 /* End Hero Banner Section */
 
 /* About Section */
+.about-header {
+    display: flex;
+    padding:0px 40px;
+    justify-content: center;
+    box-sizing: border-box;
+    background-color: #6495ed;
+    font-size: 40px;
+    position: relative;
+    background-image: url(./img/Header-background.png);
+    border: 3px solid navy;
+    text-decoration: underline black;
+}
+.about-container {
+    display: flex;
+    justify-content: right;
+    text-align: center;
+    font-size: 25px;
+    border: 2px solid navy;
+    color: aliceblue;
+    margin: 20px;
+    padding: 20px;
+}
+.about-section {
+    display: flex;
+    justify-content: right;
+    text-align: center;
+    font-size: 25px;
+    border: 2px solid navy;
+    color: black;
+    margin: 20px;
+    padding: 5px;
+}
 #about {
-    background-color: #570f6d;
+    text-align: center;
+    background-color: #4a4a4a;
     padding: 20px;
     position: relative;
 }
 #about h3 {
-    text-align: left;
+    font-size: 40px;
+    justify-content: center;
+    margin: 20px;
 }
 /* End About Section */
 
 /* Portfolio Section */
+.portfolio-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+}
+.nav-link-wrapper {
+    display: flex;
+    border: 3px solid navy;
+    background-image: url(./img/coding-doc.jpg);
+    background-size: 100%;
+}
 #portfolio {
-    background-color: #6495ed;
+    background-color: #4a4a4a;
     padding: 15px;
     columns: row;
     position: relative;
+    border: 2px solid navy;
 }
 #portfolio h4 {
+    display: flex;
+    padding: 40px;
+    justify-content: center;
+    box-sizing: border-box;
+    background-color: #6495ed;
+    font-size: 40px;
+    position: relative;
+    background-image: url(./img/Header-background.png);
+    border: 3px solid navy;
+    text-decoration: underline black;
+}
+#portfolio li {
+    display: flex;
+    justify-content: center;
     text-align: center;
+    font-size: 25px;
+    border: 2px solid black;
+    color: aliceblue;
+    margin: 20px;
+    padding: 20px;
+}
+#portfolio .nav-link-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
 #portfolio .cta {
-    margin: 0;
-    display: table-row;
-    padding:  10px 30px;
-    color: #f0f8ff;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    padding: 10px;
+    color: aliceblue;
     background-color: transparent;
-    border: 2px solid #8a2be2;
-    font-size: 2rem;
+    border: 2px solid aliceblue;
+    font-size: 1rem;
     text-transform: uppercase;
     letter-spacing: .1rem;
-    margin-top: 36px;
+    margin-top: 20px;
     transition: .3s ease;
     transition-property: background-color, color;
-    text-align: left;
+    text-align: center;
 }
 #portfolio .cta:hover {
     color: #f0f8ff;
-    background-color: #9847e3;
+    background-color: aqua;
 }
 /* End Portfolio Section */
 
 /* Contact Section */
+.link-container {
+    display: flex;
+    margin: 8px;
+    justify-content: space-between;
+}
 #contact{
-    background-color: #cd64ed;
-    padding: 100px;
+    background-color: #4a4a4a;
+    padding: 20px;
     position: relative;
 }
 #contact h5 {
+    display: flex;
+    padding: 40px;
+    justify-content: center;
+    box-sizing: border-box;
+    background-color: #6495ed;
+    font-size: 40px;
+    position: relative;
+    background-image: url(./img/Header-background.png);
+    border: 3px solid navy;
+    text-decoration: underline black;
+}
+#contact li {
+    display: flex;
+    justify-content: center;
     text-align: center;
+    font-size: 25px;
+    border: 2px solid black;
+    color: aliceblue;
+    margin: 20px;
+    padding: 20px;
 }
 #contact .cta {
-    display: inline-block;
-    padding:  15px 20px;
-    color: #f0f8ff;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    padding: 20px;
+    color: aliceblue;
     background-color: transparent;
-    border: 2px solid #8a2be2;
+    border: 2px solid aliceblue;
     font-size: 2rem;
     text-transform: uppercase;
     letter-spacing: .1rem;
-    margin-top: 24px;
+    margin-top: 20px;
     transition: .3s ease;
     transition-property: background-color, color;
-    text-align: left;
+    text-align: center;
+}
+#contact .cta:nth-child(1) {
+    background-image: url(./img/twitter-logo.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+#contact .cta:nth-child(2) {
+    background-image: url(./img/linkedin-logo.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+#contact .cta:nth-child(3) {
+    background-image: url(./img/github-logo.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+#contact .cta:hover {
+    color: #f0f8ff;
+    background-color: aqua;
 }
 /* End Contact Section */
 

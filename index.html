@@ -10,16 +10,16 @@
 <body>
  <!--Header Section-->
  <section id="hero">
-    <div class="hero container">
+    <div class="hero-container">
         <div>
             <nav>
               <h1>Hello<span></span></h1>
               <h1>My Name Is<span></span></h1>
               <h1>Charles Breven Glasgow<span></span></h1>
-              <a href="#" type="button" class="cta">Portfolio</a>
-              <a href="#" type="button" class="cta">About Me</a>
-              <a href="#" type="button" class="cta">Contact Me</a>
-              <a href="#" type="button" class="cta">Resume</a>
+              <a href="#portfolio" target="_blank" type="button" class="cta">Portfolio</a>
+              <a href="#about" type="button" class="cta">About Me</a>
+              <a href="#contact" type="button" class="cta">Contact Me</a>
+              <a href="./assets/docs/Breven-Resume.pdf" type="button" class="cta">Resume</a>
             </nav>
         </div>
     </div>
@@ -28,12 +28,16 @@
  <!--Hero Banner Section-->
  <section id="banner">
     <div class="hero-banner">
-        <div>
-            <h2>Growing:<span></span></h2>
-            <ls> You have a chance every single morning to make that 
+        <div class="banner-nav-wrapper">
+            <div class="banner-header">
+                <h2>Growing:<span></span></h2>
+            </div>
+
+            <div class="banner-content"> "You have a chance every single morning to make that 
                 change and be the person you want to be. You just 
                 have to decide to do it. Decide that today's the day 
-                and evolve into that person.</ls>
+                and evolve into that person."
+            </div>
         </div>
     </div>
  </section>
@@ -42,8 +46,12 @@
 <section id="about">
     <div class="about-section">
         <div>
-            <h3>About</h3>
-            <ls>
+
+            <div class="about-header">
+                <h3>About:</h3>
+            </div>
+
+            <div class="about-container">
                 I have been working in consumer electronics for 5 years now. I am 
                 an aspiring Software/Web Developer Certified by the Coding Boot 
                 Camp at the University of Texas. I am on the hunt for a company 
@@ -53,40 +61,78 @@
                 games that everyone around the world play. Striving to always learn 
                 new languages of code and tasks as well as do what is best for me 
                 and my family!
-            </ls>
+            </div>
+
         </div>
     </div>
 </section>
  <!--End About Me Section-->
+
 <!--Portfolio Section-->
 <section id="portfolio">
     <div class="portfolio-section">
         <div>
-            <nav>
-                <h4>Portfolio</h4>
-                <ls>Here you can see some of the work I have accomplished as well as my Resume!</ls>
-                <a href="https://github.com/Brevenn/Urban-Octo-Refactor.git" type="button" class="cta">Module 1 Challenge</a>
-                <a href="#" type="button" class="cta">Module 3 Challenge</a>
-                <a href="#" type="button" class="cta">Module 4 Challenge</a>
-                <a href="#" type="button" class="cta">Module 5 Challenge</a>
-                <a href="#" type="button" class="cta">Module 6 Challenge</a>
-                <a href="#" type="button" class="cta">Project 1</a>
-                <a href="#" type="button" class="cta">Project 2</a>
-                <a href="./assets/docs/Breven-Resume.pdf" type="button" class="cta">Resume</a>
+            <nav class="portfolio-nav-wrapper">
+
+                <div class="portfolio-header">
+                    <h4>Portfolio:</h4>
+                    <li>Here you can see some of the work I have accomplished as well as my Resume!</li>
+                </div>
+
+                <div class="portfolio-container">
+                    <div class="nav-link-wrapper">
+                        <a href="https://github.com/Brevenn/Urban-Octo-Refactor.git" type="button" class="cta">Module 1 Challenge</a>
+                    </div>
+
+                    <div class="nav-link-wrapper">
+                        <a href="#" type="button" class="cta">Module 3 Challenge Javascript Refactor</a>
+                    </div>
+
+                    <div class="nav-link-wrapper">
+                        <a href="#" type="button" class="cta">Module 4 Challenge</a>
+                    </div>
+
+                    <div class="nav-link-wrapper">
+                        <a href="#" type="button" class="cta">Module 5 Challenge</a>
+                    </div>
+
+                    <div class="nav-link-wrapper">
+                        <a href="#" type="button" class="cta">Module 6 Challenge</a>
+                    </div>
+
+                    <div class="nav-link-wrapper">
+                        <a href="#" type="button" class="cta">Project 1</a>
+                    </div>
+
+                    <div class="nav-link-wrapper">
+                        <a href="#" type="button" class="cta">Project 2</a>
+                    </div>
+
+                </div>
+
             </nav>
         </div>
     </div>
 </section>
 <!--End Portfolio Section-->
+
 <!--Contact Me Section-->
 <footer id="contact">
     <div class="contact-section">
         <div>
-            <h5>Contact</h5>
-            <ls>Here you can find my contact information and social media platforms!</ls>
-            <a href="https://twitter.com/breven_" type="button" class="cta">Twitter</a>
-            <a href="https://www.linkedin.com/in/breven-glasgow-7b07a41a3" type="button" class="cta">LinkedIn</a>
-            <a href="https://github.com/Brevenn" type="button" class="cta">GitHub</a>
+
+            <div class="contact-header">
+                <h5>Contact:</h5>
+                <li>Here you can find my contact information and social media platforms!</li>
+            </div>
+
+            <div class="link-container">
+                <a href="https://twitter.com/breven_" type="button" class="cta">Twitter</a>
+                <a href="https://www.linkedin.com/in/breven-glasgow-7b07a41a3" type="button" class="cta">LinkedIn</a>
+                <a href="https://github.com/Brevenn" type="button" class="cta">GitHub</a>
+                <a class="cta">Cell: 512-577-8907</a>
+            </div>
+
         </div>
     </div>
 </footer>
