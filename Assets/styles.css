@@ -18,22 +18,18 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 
 /* Header Section */
 #hero {
     display: flex;
-    columns: row;
     border: 2px solid navy;
     background-color: #4a4a4a;
     background-size: cover;
     background-position: top right;
     position: relative;
     z-index: 1;
-    background-image: url(./img/recent-selfie.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: right;
 }
 #hero::after {
     content:'';
@@ -56,7 +52,7 @@ a {
     display: block;
     justify-content: left;
     width: fit-content;
-    font-size: 4rem;
+    font-size: 3rem;
     position: relative;
     color: transparent;
     animation: text_reveal .5s ease forwards;
@@ -71,6 +67,7 @@ a {
 #hero h1:nth-child(3) {
     animation: text_reveal_name .5s ease forwards;
     animation-delay: 3s;
+    color: rgb(100, 100, 191);
 }
 #hero h1 span {
     position: absolute;
@@ -91,9 +88,11 @@ a {
 }
 #hero h1:nth-child(3) span {
     animation-delay: 2.5s;
+    color: navy;
 }
 #hero .cta {
     display: inline-block;
+    flex-direction: row-reverse;
     justify-content: right;
     padding:  10px 30px;
     color: navy;
@@ -110,6 +109,19 @@ a {
 #hero .cta:hover {
     color: navy;
     background-color: #808080;
+}
+#hero .hero-image {
+    display: flex;
+    position: relative;
+    justify-content: left;
+    padding: 15px;
+    margin: 10px;
+    height: 300px;
+    width: 300px;
+    background-image: url(./img/recent-selfie.png);
+    background-repeat: no repeat;
+    background-size: 100%;
+    outline: 2px solid navy;
 }
 /* End Header Section */
 
@@ -201,6 +213,7 @@ a {
     background-color: #4a4a4a;
     padding: 20px;
     position: relative;
+    border: 3px solid navy;
 }
 #about h3 {
     font-size: 40px;
@@ -247,7 +260,7 @@ a {
     justify-content: center;
     text-align: center;
     font-size: 25px;
-    border: 2px solid black;
+    border: 2px solid navy;
     color: aliceblue;
     margin: 20px;
     padding: 20px;
@@ -256,6 +269,7 @@ a {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    justify-content: space-between;
 }
 #portfolio .cta {
     display: flex;
@@ -282,13 +296,17 @@ a {
 /* Contact Section */
 .link-container {
     display: flex;
-    margin: 8px;
+    flex-wrap: wrap;
+    flex-direction: row;
     justify-content: space-between;
+    padding: 20px;
+    margin: 10px;
 }
 #contact{
     background-color: #4a4a4a;
     padding: 20px;
     position: relative;
+    border: 3px solid navy;
 }
 #contact h5 {
     display: flex;
@@ -307,19 +325,19 @@ a {
     justify-content: center;
     text-align: center;
     font-size: 25px;
-    border: 2px solid black;
+    border: 2px solid navy;
     color: aliceblue;
     margin: 20px;
     padding: 20px;
 }
 #contact .cta {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between, center;
     margin: 20px;
     padding: 20px;
     color: aliceblue;
     background-color: transparent;
-    border: 2px solid aliceblue;
+    border: 2px solid navy;
     font-size: 2rem;
     text-transform: uppercase;
     letter-spacing: .1rem;
@@ -333,22 +351,21 @@ a {
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;
+    background-clip: content-box;
 }
 #contact .cta:nth-child(2) {
     background-image: url(./img/linkedin-logo.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;
+    background-clip: content-box;
 }
 #contact .cta:nth-child(3) {
     background-image: url(./img/github-logo.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;
-}
-#contact .cta:hover {
-    color: #f0f8ff;
-    background-color: aqua;
+    background-clip: content-box;
 }
 /* End Contact Section */
 
